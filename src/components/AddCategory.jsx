@@ -10,7 +10,7 @@ export function AddCategory({ onNewCategory }) {
   const onSubmit = (event) => {
     event.preventDefault();
     if (inputValue.length <= 1) return;
-    onNewCategory(inputValue);
+    onNewCategory(inputValue.trim());
     setInputValue("");
   };
 
