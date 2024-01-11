@@ -1,10 +1,10 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: rgb(234, 234, 234);
 }
 
 body {
   padding: 60px;
+  background-color: rgb(234, 234, 234);
 }
 
 input {
@@ -47,6 +47,7 @@ h3 {
   margin-bottom: 20px;
   margin-right: 20px;
   overflow: hidden;
+  border: 1.3px solid black;
 }
 
 .card p {
@@ -60,33 +61,9 @@ h3 {
 
 .card img {
   width: 100%;
+  background-size: cover;
 }
 
-.titulo {
-  @keyframes rainbowAnimation {
-    0% {
-      color: red;
-    }
-    16.66% {
-      color: orange;
-    }
-    33.33% {
-      color: yellow;
-    }
-    50% {
-      color: green;
-    }
-    66.66% {
-      color: blue;
-    }
-    83.33% {
-      color: indigo;
-    }
-    100% {
-      color: violet;
-    }
-  }
-
-  font-size: 2em;
-  animation: rainbowAnimation 4s infinite; /* Adjust the duration as needed */
+.card:hover {
+  cursor: pointer;
 }
