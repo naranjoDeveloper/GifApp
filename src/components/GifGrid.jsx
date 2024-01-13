@@ -7,11 +7,15 @@ function GifGrid({ category }) {
   return (
     <>
       <h3> {category} </h3>
-      <div className="card-grid">
-        {images.map(({ id, title, url }) => (
-          <GifItem id={id} title={title} url={url} key={id} />
-        ))}
-      </div>
+      {isLoading ? (
+        "Cargando..."
+      ) : (
+        <div className="card-grid">
+          {images.map(({ id, title, url }) => (
+            <GifItem id={id} title={title} url={url} key={id} />
+          ))}
+        </div>
+      )}
     </>
   );
 }

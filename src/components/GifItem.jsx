@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import { Tooltip } from "react-tooltip";
 
-export default function GifItem({ title, url }) {
+export default function GifItem({ title, url, id }) {
   const handleClick = () => {
     Swal.fire({
       title: "Felicidades!",
